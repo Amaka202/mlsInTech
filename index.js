@@ -32,6 +32,15 @@ function goToContact(){
     toggleNav()
 }
 
+function redirectToForm () {
+  const url = "https://docs.google.com/forms/d/e/1FAIpQLScqGNmOa5JvDR6NXbXVQPgz2phj-ZrLBa4rxnw0drlvClqWeA/viewform";
+  window.open(url, "_blank");
+};
+
+function sendEmail() {
+    window.location = "mailto:MedicalLabScientistsinTech@gmail.com";
+}
+
 function Carousel(containerID) {
     this.container = document.getElementById(containerID) || document.body;
     this.slides = this.container.querySelectorAll('.carousel');
