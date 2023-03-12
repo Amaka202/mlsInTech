@@ -12,7 +12,10 @@ html, body {
 header{
     display: flex;
     justify-content: space-between;
-    background: linear-gradient(90.23deg, rgba(33, 88, 81, 0.5) 0%, rgba(33, 88, 81, 0.6) 100%);
+    /* background: linear-gradient(90.23deg, rgba(33, 88, 81, 0.5) 0%, rgba(33, 88, 81, 0.6) 100%); */
+    background: linear-gradient(92.42deg, #2B5956 0%, #265551 100%);
+/* ELEVATION 1 */
+
     backdrop-filter: blur(57.5px);
     padding: 0 3rem;
 }
@@ -205,6 +208,8 @@ header{
 @media only screen and (max-width: 1000px) {
     header{
         padding: 0 1rem;
+    box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px rgba(0, 0, 0, 0.3);
+
     }
 
     header img{
@@ -218,8 +223,8 @@ header{
     }
 
     .nav {
-        background: rgb(14, 14, 14);
-        /* background: linear-gradient(90.23deg, rgba(12, 52, 47, 0.5) 100%, rgba(8, 47, 42, 0.6) 100%); */
+        background: linear-gradient(180deg, #FFFFFF 0%, rgba(220, 254, 250, 0.84) 100%);
+        box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px rgba(0, 0, 0, 0.3);
         position: absolute;
         z-index: 100;
         right: 10px;
@@ -235,7 +240,7 @@ header{
     }
 
     .nav p{
-        color: #fff;
+        color: #1C1B1F;
 
     }
 
