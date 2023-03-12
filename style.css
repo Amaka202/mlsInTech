@@ -188,14 +188,24 @@ header{
 }
 
 .footer-nav{
-    display: flex;
-    align-self: center;
+    /* display: flex; */
+    /* align-self: center; */
 }
 
 .footer-nav p{
-    margin-left: 1rem;
-    color: #C0E5E0;
+    /* margin-left: 1rem; */
     cursor: pointer;
+}
+
+.footer-title{
+    font-size: 20px;
+    color: #C86B3E;
+
+}
+
+.footer p{
+    color: #C0E5E0;
+
 }
 
 @media only screen and (max-width: 1024px) {
@@ -320,7 +330,8 @@ header{
     .footer{
     padding: 0 1rem;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
+    text-align: center;
     }
 
     .footer img{
