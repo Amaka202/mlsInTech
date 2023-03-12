@@ -20,6 +20,7 @@ header{
 .nav{
     display: flex;
     align-self: center;
+
 }
 
 .nav p{
@@ -42,6 +43,8 @@ header{
     align-content: center;
     padding: 0 4rem;
     background-size: 100% 100%;
+    position: relative;
+    z-index: -99;
 }
 
 .hero-text{
@@ -77,14 +80,7 @@ header{
     position: relative;
     align-self: center;
   }
-  
-  /* .carousel {
-    width: 600px;
-    height: 300px;
-    overflow: hidden;
-    border: #fff solid 5px;
-  } */
-  
+   
 
 .about{
     display: flex;
@@ -188,6 +184,17 @@ header{
     margin-top: 3rem;
 }
 
+.footer-nav{
+    display: flex;
+    align-self: center;
+}
+
+.footer-nav p{
+    margin-left: 1rem;
+    color: #C0E5E0;
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 1024px) {
     #item {
         width: 30%;
@@ -211,19 +218,25 @@ header{
     }
 
     .nav {
-        background: linear-gradient(90.23deg, rgba(33, 88, 81, 0.5) 0%, rgba(33, 88, 81, 0.6) 100%);
+        background: rgb(14, 14, 14);
+        /* background: linear-gradient(90.23deg, rgba(12, 52, 47, 0.5) 100%, rgba(8, 47, 42, 0.6) 100%); */
         position: absolute;
+        z-index: 100;
         right: 10px;
         top: 70px;
         padding: 1rem;
         flex-direction: column;
         transition: all 400ms;
         display: none;
-        
     }
 
     .nav-show{
-        display: block;
+        display: flex;
+    }
+
+    .nav p{
+        color: #fff;
+
     }
 
     .hero {
@@ -301,6 +314,8 @@ header{
 
     .footer{
     padding: 0 1rem;
+    flex-direction: column;
+    align-items: center;
     }
 
     .footer img{
